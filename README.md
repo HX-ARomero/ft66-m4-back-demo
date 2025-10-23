@@ -3,8 +3,10 @@
 ## Resumenes de Clases
 
 - [01- Backend Architecture](./readmes/clases/NestJS-01.md)
-- [02- NestJS Fundamentals I]()
-- [03- NestJS Fundamentals II]()
+- [02- NestJS Fundamentals I](./readmes/clases/NestJS-02.md)
+- [03- NestJS Fundamentals II](./readmes/clases/NestJS-03.md)
+  - [Custom Providers](./readmes/clases/NestJS-03-Providers.md)
+  - [Decoradores](./readmes/clases/NestJS-03-Decoradores.md)
 - [04- NestJS Routing]()
 - [05- NestJS & TypeORM]()
 - [06- NestJS Pipes]()
@@ -23,6 +25,11 @@
 ## Nest
 
 - [Nest JS - Documentación Oficial](https://nestjs.com/)
+
+## JavaScript
+
+- [Parámetros & Argumentos](./readmes/JavaScript/Parametros_Argumentos.md)
+- [Truthy & Falsy](./readmes/JavaScript/Trythy_Falsy.md)
 
 ## Tomar notas digitales
 
