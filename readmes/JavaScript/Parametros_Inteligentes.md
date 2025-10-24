@@ -1,6 +1,6 @@
 # 🧠 ¿Qué son los “parámetros inteligentes”?
 
-[Volver](./JavaScript.md)
+[Volver](../../README.md)
 
 El término no es oficial del lenguaje, pero se usa para referirse a formas avanzadas y seguras de manejar parámetros de funciones en JavaScript, aprovechando:
 
@@ -135,4 +135,4 @@ Los parámetros inteligentes hacen que las funciones en JavaScript sean:
 - Más flexibles (aceptan distintas formas de invocación).
 - Más limpias y legibles (menos condicionales dentro del cuerpo).
 
-[Volver](./JavaScript.md)
+[Volver](../../README.md)

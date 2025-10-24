@@ -3,11 +3,17 @@
 ## Resumenes de Clases
 
 - [01- Backend Architecture](./readmes/clases/NestJS-01.md)
+  - [Parámetros & Argumentos](./readmes/JavaScript/Parametros_Argumentos.md)
 - [02- NestJS Fundamentals I](./readmes/clases/NestJS-02.md)
+  - [Truthy & Falsy](./readmes/JavaScript/Trythy_Falsy.md)
+  - [Parámetro de Fusión Nula](./readmes/JavaScript/Fusion_Nula.md)
 - [03- NestJS Fundamentals II](./readmes/clases/NestJS-03.md)
   - [Custom Providers](./readmes/clases/NestJS-03-Providers.md)
   - [Decoradores](./readmes/clases/NestJS-03-Decoradores.md)
-- [04- NestJS Routing]()
+  - [Parámetros Inteligentes](./readmes/JavaScript/Parametros_Inteligentes.md)
+- [04- NestJS Routing](./readmes/clases/NestJS-04.md)
+  - [Buenas Prácticas](./readmes/JavaScript/Buenas_Practicas.md)
+  - [Principios SOLID](./readmes/JavaScript/SOLID.md)
 - [05- NestJS & TypeORM]()
 - [06- NestJS Pipes]()
 - [07- NestJS File Upload]()

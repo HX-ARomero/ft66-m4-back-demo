@@ -1,6 +1,6 @@
 # Valores Truthy✅ y Falsy❌ en JavaScript
 
-[Volver](./JavaScript.md)
+[Volver](../../README.md)
 
 - En JavaScript, todas las expresiones se pueden evaluar en un contexto booleano (true o false).
 - Un contexto lógico o booleano es cualquier situación en la que JavaScript necesita decidir entre dos opciones lógicas: verdadero (true) o falso (false), por ejemplo, dentro de una estructura condicional (if, else if o while).
@@ -90,4 +90,4 @@ console.log(!!null); // false
 
 <img src="../assets/Truthy&Falsy.png">
 
-[Volver](./JavaScript.md)
+[Volver](../../README.md)

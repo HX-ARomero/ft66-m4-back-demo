@@ -1,6 +1,6 @@
 # 🧠 Parámetros y Argumentos en JavaScript
 
-[Volver](./JavaScript.md)
+[Volver](../../README.md)
 
 > Aunque muchas veces usamos estos términos como sinónimos, en realidad hacen referencia a conceptos distintos.
 
@@ -94,4 +94,4 @@ suma(2, 4, 6, 8);
 - 🧩 Diferencias entre arguments y ...args
 - 📏 Parámetros por defecto y parámetros rest
 
-[Volver](./JavaScript.md)
+[Volver](../../README.md)
