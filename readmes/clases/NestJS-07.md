@@ -65,6 +65,11 @@ export class FileUploadRepository {
 
 Es la **firma del tipo** del archivo recibido
 
+Instalación:
+```bash
+npm i -D @types/multer
+```
+
 - Tiene propiedades como:
 
 ```ts
