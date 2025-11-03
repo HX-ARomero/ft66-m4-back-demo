@@ -105,12 +105,13 @@ Una migración en el contexto de bases de datos es un mecanismo que permite gest
   - "migration:revert": Revertir migración
   - "migration:show": Mostrar migración
 
-### Ejemplo de Migración
+### Ejemplo de Migración | Cambiar nombre de un atributo:
 
 ```ts
 import { MigrationInterface, QueryRunner } from "typeorm";
 
 export class NameRefactor1712799620352 implements MigrationInterface {
+
   public async up(queryRunner: QueryRunner): Promise<void> {
     await queryRunner.query(
       'ALTER TABLE "USERS" RENAME COLUMN "name" TO "fullname"'
@@ -121,6 +122,46 @@ export class NameRefactor1712799620352 implements MigrationInterface {
     await queryRunner.query(
       'ALTER TABLE "USERS" RENAME COLUMN "fullname" TO "name"'
     );
+  }
+}
+```
+
+### Ejemplo de Migración | Crear Usuario con Rol de Admin
+
+```ts
+import { MigrationInterface, QueryRunner } from "typeorm";
+import * as bcrypt from "bcrypt";
+
+export class CreateTestUser1762179999999 implements MigrationInterface {
+
+  public async up(queryRunner: QueryRunner): Promise<void> {
+    // Hasheamos la contraseña antes de insertarla:
+    const passwordHash = await bcrypt.hash("aaBB33##", 10);
+
+    await queryRunner.query(
+      `
+      INSERT INTO "USERS" 
+        ("name", "email", "password", "address", "phone", "country", "city", "isAdmin") 
+      VALUES 
+        ($1, $2, $3, $4, $5, $6, $7, $8)
+      `,
+      [
+        "TestUser",
+        "testuser@mail.com",
+        passwordHash,
+        "Demo 1234",
+        5556666,
+        "Demo",
+        "Demo",
+        true,
+      ]
+    );
+  }
+
+  public async down(queryRunner: QueryRunner): Promise<void> {
+    await queryRunner.query(`DELETE FROM "USERS" WHERE "email" = $1`, [
+      "testuser@mail.com",
+    ]);
   }
 }
 ```
