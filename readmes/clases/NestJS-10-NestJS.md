@@ -1,5 +1,7 @@
 # ⚙️ Secuencia de inicio de una aplicación NestJS
 
+[Volver a Inicio](../../README.md)
+
 > Entender la secuencia de inicio (bootstrap) de NestJS ayuda muchísimo a depurar y optimizar la app.
 
 ## 1. Ejecución del archivo de entrada (main.ts)
@@ -169,3 +171,5 @@ function createApplicationContext(AppModule) {
 | 7    | Se aplican pipes/interceptores/filtros |
 | 8    | Se ejecutan hooks (`onModuleInit`)     |
 | 9    | Se levanta el servidor (`app.listen`)  |
+
+[Volver a Inicio](../../README.md)
